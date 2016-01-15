@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Row-Level Security", "Row-Level Security\Row-Level Security.rptproj", "{978910F4-A722-49AE-A5B9-5119FA31DB9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{978910F4-A722-49AE-A5B9-5119FA31DB9A}.Debug|Default.ActiveCfg = Debug
+		{978910F4-A722-49AE-A5B9-5119FA31DB9A}.Debug|Default.Build.0 = Debug
+		{978910F4-A722-49AE-A5B9-5119FA31DB9A}.Debug|Default.Deploy.0 = Debug
+		{978910F4-A722-49AE-A5B9-5119FA31DB9A}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{978910F4-A722-49AE-A5B9-5119FA31DB9A}.DebugLocal|Default.Build.0 = DebugLocal
+		{978910F4-A722-49AE-A5B9-5119FA31DB9A}.Release|Default.ActiveCfg = Release
+		{978910F4-A722-49AE-A5B9-5119FA31DB9A}.Release|Default.Build.0 = Release
+		{978910F4-A722-49AE-A5B9-5119FA31DB9A}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
