@@ -1,0 +1,187 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="031da62e-82fd-4d45-9fda-6185173015d4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Procedure Code</ID>
+  <Name>Procedure Code</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2017" scrolltop="-3439" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9472" y="11721" backcolor="16185078" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="ProcedureCode" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5398" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="0008000016150000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dim_ProcedureCode" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2017</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3439</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d2218372-71f6-41dc-8739-05a6b5c85c12">
+    <DataSourceViewID>dsvMyHospital</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="066de9b6-5d33-4600-87a6-c7bd4d516a37">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="a7c8ca58-a2a3-43d0-aad1-3eca211ca8e6">
+      <ID>Procedure Code Key</ID>
+      <Name>Procedure Code Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a9d7d499-76a2-4c67-b852-2e20c0233184">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="149536ad-6db0-4dfa-a8c8-87d8782157b6">
+            <TableID>dim_ProcedureCode</TableID>
+            <ColumnID>ProcedureCodeKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1e5b48bd-0cb1-4495-ba5f-32577b614831">
+          <AttributeID>Procedure Code Plus Description</AttributeID>
+          <Name>Procedure Code Plus Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="620fd9c2-d1de-48f5-bafb-c0df5cea1292">
+          <AttributeID>Procedure Code</AttributeID>
+          <Name>Procedure Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d72ba5f1-5ed7-4b75-b94b-057a6c2c2ad0">
+          <AttributeID>Procedure Code Description</AttributeID>
+          <Name>Procedure Code Description</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="55266af4-2cde-49e4-b3dd-418d51d7f3b0">
+          <AttributeID>Procedure Code Category</AttributeID>
+          <Name>Procedure Code Category</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="28b10b98-20cb-40c0-b888-aa45e1eda62e">
+      <ID>Procedure Code Plus Description</ID>
+      <Name>Procedure Code Plus Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f3938080-9f9c-40b2-8ad0-de38433117ac">
+          <DataType>WChar</DataType>
+          <DataSize>110</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="053b8b22-a1af-4065-9c5e-33702161e3a5">
+            <TableID>dim_ProcedureCode</TableID>
+            <ColumnID>ProcedureCodePlusDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d7e3df0c-2efa-43c9-9244-6d119f79a4fc">
+      <ID>Procedure Code</ID>
+      <Name>Procedure Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="992a7068-88ba-4d6f-ab13-34ed018bf30c">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7e91eca5-be43-4f83-bd67-9c197207b39a">
+            <TableID>dim_ProcedureCode</TableID>
+            <ColumnID>ProcedureCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7a039d55-a0c9-4f07-bf54-63e066f527ca">
+      <ID>Procedure Code Description</ID>
+      <Name>Procedure Code Description</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="932455a8-ddfc-4eb1-bba8-3825a63a1695">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="68c03655-bde2-4cf2-b010-b2b4a4b075b7">
+            <TableID>dim_ProcedureCode</TableID>
+            <ColumnID>ProcedureCodeDescription</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1803ec59-5a49-4b75-b8cd-85defe893409">
+      <ID>Procedure Code Category</ID>
+      <Name>Procedure Code Category</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b9d922ed-23a0-4ff0-aa39-639f523faa0f">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="35df3228-ca18-4923-bb77-e31d62844e04">
+            <TableID>dim_ProcedureCode</TableID>
+            <ColumnID>ProcedureCodeCategory</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,110 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Charge Summary</Database>
+    <Server>MyHospital\Multidimensional</Server>
+    <ConnectionString>DataSource=MyHospital\Multidimensional;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>QFHelYaEvmnS4FZZdTNBxFB9N9o=1/15/2016 9:47:01 PM4/14/2015 1:07:50 PM</TimeStamp>
+        <ID>
+          <String>dsMyHospital</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>6BIXJMLg4bUgPkpS/UGERal6F+g=4/10/2015 1:10:36 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <ID>
+          <String>dsvMyHospital</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Sna2tbRWTzeDxz8KkM504Htyqa4=4/10/2015 1:22:22 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <ID>
+          <String>Charge Posting Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7GBtIq67qQay2rm0xFA3sglulag=4/10/2015 1:28:04 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <ID>
+          <String>Department</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>obj94Elm6me4UOwICgDpE89/Nxs=4/10/2015 1:20:22 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <ID>
+          <String>Patient</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7cbDzZeRC9n7nlwRHbWRywoZFlM=4/10/2015 1:21:30 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <ID>
+          <String>Procedure Code</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>sam3s20ft7/PyxyrEmZR6NPybf0=4/10/2015 1:20:49 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <ID>
+          <String>Provider</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9dWbK5X0OOdN7ODpGMgAgN7PsZY=4/10/2015 1:23:06 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <ID>
+          <String>Service Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>wCI8aKGeryYBeBMxW3KG5PzjgGs=4/10/2015 8:03:47 AM4/14/2015 1:07:50 PMR0COmL+lte+RCXOBQd1S9hodhik=4/10/2015 1:23:56 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <ID>
+          <String>Charge Summary</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Role</Type>
+        <TimeStamp>tHlzTXzI3LB6rzreQHMOTjRCUjE=4/10/2015 8:53:14 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <ID>
+          <String>Role</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Role</Type>
+        <TimeStamp>L2XI7xMjqpgMagdsfAsgL/yYvUE=4/10/2015 8:54:16 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <ID>
+          <String>Role 1</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>L6da0q2w5KlZXtiqmb6jzzWCbs0=4/10/2015 8:54:16 AM4/14/2015 1:07:50 PM</TimeStamp>
+      <ID>
+        <String>Charge Summary</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2016-01-16T03:47:28.366667Z</LastDeployed>
+</DeploymentSnapshot>

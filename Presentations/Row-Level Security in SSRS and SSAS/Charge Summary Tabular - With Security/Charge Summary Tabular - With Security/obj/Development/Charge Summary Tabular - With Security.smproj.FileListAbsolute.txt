@@ -1,0 +1,12 @@
+C:\Users\DrJekyll325\Documents\Visual Studio 2012\Projects\Charge Summary Tabular - With Security\Charge Summary Tabular - With Security\bin\Charge Summary Tabular With Security.asdatabase
+C:\Users\DrJekyll325\Documents\Visual Studio 2012\Projects\Charge Summary Tabular - With Security\Charge Summary Tabular - With Security\bin\Charge Summary Tabular With Security.deploymenttargets
+C:\Users\DrJekyll325\Documents\Visual Studio 2012\Projects\Charge Summary Tabular - With Security\Charge Summary Tabular - With Security\bin\Charge Summary Tabular With Security.deploymentoptions
+C:\Users\DrJekyll325\Documents\Visual Studio 2012\Projects\Charge Summary Tabular - With Security\Charge Summary Tabular - With Security\obj\Development\Charge Summary Tabular With Security.asdatabase
+C:\Users\DrJekyll325\Documents\Visual Studio 2012\Projects\Charge Summary Tabular - With Security\Charge Summary Tabular - With Security\obj\Development\Charge Summary Tabular With Security.deploymentoptions
+C:\Users\DrJekyll325\Documents\Visual Studio 2012\Projects\Charge Summary Tabular - With Security\Charge Summary Tabular - With Security\obj\Development\Charge Summary Tabular With Security.deploymenttargets
+C:\Presentations\Charge Summary Tabular - With Security\Charge Summary Tabular - With Security\bin\Charge Summary Tabular With Security.asdatabase
+C:\Presentations\Charge Summary Tabular - With Security\Charge Summary Tabular - With Security\bin\Charge Summary Tabular With Security.deploymenttargets
+C:\Presentations\Charge Summary Tabular - With Security\Charge Summary Tabular - With Security\bin\Charge Summary Tabular With Security.deploymentoptions
+C:\Presentations\Charge Summary Tabular - With Security\Charge Summary Tabular - With Security\obj\Development\Charge Summary Tabular With Security.asdatabase
+C:\Presentations\Charge Summary Tabular - With Security\Charge Summary Tabular - With Security\obj\Development\Charge Summary Tabular With Security.deploymentoptions
+C:\Presentations\Charge Summary Tabular - With Security\Charge Summary Tabular - With Security\obj\Development\Charge Summary Tabular With Security.deploymenttargets

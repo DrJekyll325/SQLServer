@@ -1,0 +1,12 @@
+c:\users\drjekyll325\documents\visual studio 2012\Projects\Charge Summary Tabular\Charge Summary Tabular\bin\Charge Summary.asdatabase
+c:\users\drjekyll325\documents\visual studio 2012\Projects\Charge Summary Tabular\Charge Summary Tabular\bin\Charge Summary.deploymenttargets
+c:\users\drjekyll325\documents\visual studio 2012\Projects\Charge Summary Tabular\Charge Summary Tabular\bin\Charge Summary.deploymentoptions
+c:\users\drjekyll325\documents\visual studio 2012\Projects\Charge Summary Tabular\Charge Summary Tabular\obj\Development\Charge Summary.asdatabase
+c:\users\drjekyll325\documents\visual studio 2012\Projects\Charge Summary Tabular\Charge Summary Tabular\obj\Development\Charge Summary.deploymentoptions
+c:\users\drjekyll325\documents\visual studio 2012\Projects\Charge Summary Tabular\Charge Summary Tabular\obj\Development\Charge Summary.deploymenttargets
+C:\Presentations\Charge Summary Tabular\Charge Summary Tabular\bin\Charge Summary.asdatabase
+C:\Presentations\Charge Summary Tabular\Charge Summary Tabular\bin\Charge Summary.deploymenttargets
+C:\Presentations\Charge Summary Tabular\Charge Summary Tabular\bin\Charge Summary.deploymentoptions
+C:\Presentations\Charge Summary Tabular\Charge Summary Tabular\obj\Development\Charge Summary.asdatabase
+C:\Presentations\Charge Summary Tabular\Charge Summary Tabular\obj\Development\Charge Summary.deploymentoptions
+C:\Presentations\Charge Summary Tabular\Charge Summary Tabular\obj\Development\Charge Summary.deploymenttargets

@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Charge Summary", "Charge Summary\Charge Summary.dwproj", "{8AA18FDF-A845-4F79-9C6E-4E5E5878BD5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AA18FDF-A845-4F79-9C6E-4E5E5878BD5B}.Development|Default.ActiveCfg = Development
+		{8AA18FDF-A845-4F79-9C6E-4E5E5878BD5B}.Development|Default.Build.0 = Development
+		{8AA18FDF-A845-4F79-9C6E-4E5E5878BD5B}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
