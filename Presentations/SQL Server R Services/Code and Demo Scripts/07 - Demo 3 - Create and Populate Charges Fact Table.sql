@@ -3,6 +3,10 @@ GO
 
 
 --	Create and populate Charges fact
+IF EXISTS(SELECT * FROM sys.tables WHERE name = 'Charges')
+	DROP TABLE fact.Charges;
+
+
 CREATE TABLE
 	fact.Charges
 (
@@ -120,7 +124,7 @@ SELECT
 									ELSE Chg.ChargeAmount
 								END / 250)
 INTO
-	#Encounters
+	#tmpEncounters
 FROM
 	#tmpCharges Chg
 		INNER JOIN
@@ -168,7 +172,7 @@ SELECT
 	ChargesSourceKey = t.SequenceNumber,
 	ChargesLastUpdatedDate = CAST(SYSDATETIME() AS DATE)
 FROM
-	#Encounters Enc
+	#tmpEncounters Enc
 		CROSS JOIN
 	Admin.dbo.Tally t
 WHERE

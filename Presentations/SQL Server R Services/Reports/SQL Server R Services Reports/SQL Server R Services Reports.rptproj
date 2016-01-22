@@ -10,12 +10,12 @@
   <DataSets />
   <Reports>
     <ProjectItem>
-      <Name>Charge Summary.rdl</Name>
-      <FullPath>Charge Summary.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Charge Summary With Controls.rdl</Name>
       <FullPath>Charge Summary With Controls.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Charge Summary.rdl</Name>
+      <FullPath>Charge Summary.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
@@ -25,6 +25,7 @@
       <Options>
         <OutputPath>bin\Debug</OutputPath>
         <TargetServerVersion>SSRS2016</TargetServerVersion>
+        <TargetServerURL>http://myhospital/reportserver</TargetServerURL>
         <TargetFolder>SQL Server R Services Reports</TargetFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>

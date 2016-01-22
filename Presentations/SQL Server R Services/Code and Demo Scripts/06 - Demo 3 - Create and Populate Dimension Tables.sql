@@ -3,6 +3,10 @@ GO
 
 
 --	Create and populate Calendar dimension
+IF EXISTS(SELECT * FROM sys.tables WHERE name = 'Calendar')
+	DROP TABLE dim.Calendar;
+
+
 CREATE TABLE
 	dim.Calendar
 (
@@ -88,6 +92,10 @@ ORDER BY
 
 
 --	Create Department dimension
+IF EXISTS(SELECT * FROM sys.tables WHERE name = 'Department')
+	DROP TABLE dim.Department;
+
+
 CREATE TABLE
 	dim.Department
 (
@@ -221,6 +229,10 @@ VALUES ('Urgent Care', 'Urgent Care', 'West Side', 'Y', 'EMR', 203, CAST(SYSDATE
 
 
 --	Create Patient dimension
+IF EXISTS(SELECT * FROM sys.tables WHERE name = 'Patient')
+	DROP TABLE dim.Patient;
+
+
 CREATE TABLE
 	dim.Patient
 (
@@ -281,6 +293,10 @@ ORDER BY
 
 
 --	Create Procedure Code dimension
+IF EXISTS(SELECT * FROM sys.tables WHERE name = 'ProcedureCode')
+	DROP TABLE dim.ProcedureCode;
+
+
 CREATE TABLE
 	dim.ProcedureCode
 (
@@ -351,6 +367,10 @@ VALUES ('99215 - Office/outpatient visit est', '99215', 'Office/outpatient visit
 
 
 --	Create Provider dimension
+IF EXISTS(SELECT * FROM sys.tables WHERE name = 'Provider')
+	DROP TABLE dim.Provider;
+
+
 CREATE TABLE
 	dim.Provider
 (

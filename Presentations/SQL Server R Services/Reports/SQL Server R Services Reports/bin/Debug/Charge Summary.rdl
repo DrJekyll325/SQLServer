@@ -114,7 +114,7 @@
     <ReportSection>
       <Body>
         <ReportItems>
-          <Chart Name="Chart2">
+          <Chart Name="Chart1">
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
@@ -176,7 +176,7 @@
                       <Format>MM/dd/yy</Format>
                     </Style>
                     <ChartAxisTitle>
-                      <Caption>Axis Title</Caption>
+                      <Caption>Charge Posting Date</Caption>
                       <Style>
                         <FontSize>8pt</FontSize>
                       </Style>
@@ -201,7 +201,6 @@
                       <Length>0.5</Length>
                     </ChartMinorTickMarks>
                     <CrossAt>NaN</CrossAt>
-                    <Scalar>true</Scalar>
                     <Minimum>NaN</Minimum>
                     <Maximum>NaN</Maximum>
                     <ChartAxisScaleBreak>
@@ -250,9 +249,11 @@
                   <ChartAxis Name="Primary">
                     <Style>
                       <FontSize>8pt</FontSize>
+                      <Format>'$'0,;('$'0,)</Format>
+                      <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
                     </Style>
                     <ChartAxisTitle>
-                      <Caption>Axis Title</Caption>
+                      <Caption>Total Charges in $K</Caption>
                       <Style>
                         <FontSize>8pt</FontSize>
                       </Style>
@@ -326,13 +327,14 @@
             </ChartAreas>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Chart Title</Caption>
+                <Caption>Total Charges By Day</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontWeight>Bold</FontWeight>
                   <TextAlign>General</TextAlign>
                   <VerticalAlign>Top</VerticalAlign>
                 </Style>
+                <DockOutsideChartArea>true</DockOutsideChartArea>
               </ChartTitle>
             </ChartTitles>
             <Palette>BrightPastel</Palette>
@@ -352,10 +354,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>dsChargeSummary</DataSetName>
-            <Top>0.14875in</Top>
-            <Left>0.155in</Left>
-            <Height>2.92708in</Height>
-            <Width>8.54708in</Width>
+            <Top>0.12583in</Top>
+            <Left>0.10292in</Left>
+            <Height>4.57292in</Height>
+            <Width>8.59916in</Width>
             <Style>
               <Border>
                 <Color>LightGrey</Color>

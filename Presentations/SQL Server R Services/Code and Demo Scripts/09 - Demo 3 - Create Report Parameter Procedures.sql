@@ -2,6 +2,11 @@ USE RDemo;
 GO
 
 
+IF EXISTS(SELECT * FROM sys.procedures WHERE name = 'uspReportParameters_Practice')
+	DROP PROCEDURE report.uspReportParameters_Practice;
+GO
+
+
 CREATE PROCEDURE report.uspReportParameters_Practice
 (
 	@AllowSelectAllPractices	BIT
@@ -25,6 +30,11 @@ BEGIN
 		PracticeName;
 
 END;
+GO
+
+
+IF EXISTS(SELECT * FROM sys.procedures WHERE name = 'uspReportParameters_Department')
+	DROP PROCEDURE report.uspReportParameters_Department;
 GO
 
 
@@ -56,6 +66,11 @@ BEGIN
 		DepartmentName;
 
 END;
+GO
+
+
+IF EXISTS(SELECT * FROM sys.procedures WHERE name = 'uspReportParameters_Provider')
+	DROP PROCEDURE report.uspReportParameters_Provider;
 GO
 
 

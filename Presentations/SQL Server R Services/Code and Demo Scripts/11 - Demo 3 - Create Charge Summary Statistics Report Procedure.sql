@@ -1,8 +1,13 @@
-USE [RDemo]
+USE RDemo;
 GO
 
 
-CREATE PROCEDURE [report].[uspChargeSummary_ChargeStatistics]
+IF EXISTS(SELECT * FROM sys.procedures WHERE name = 'uspChargeSummary_ChargeStatistics')
+	DROP PROCEDURE report.uspChargeSummary_ChargeStatistics;
+GO
+
+
+CREATE PROCEDURE report.uspChargeSummary_ChargeStatistics
 (
 	@PracticeName				VARCHAR(20),
 	@DepartmentName				VARCHAR(20),
@@ -37,9 +42,6 @@ BEGIN
 			TotalCharges = SUM(Chg.ChargeAmount)
 		FROM
 			RDemo.fact.Charges Chg
-				INNER JOIN
-			RDemo.dim.Calendar ChgPost
-				On Chg.ChargePostingDateKey = ChgPost.CalendarKey
 				INNER JOIN
 			RDemo.dim.Department Dept
 				On Chg.DepartmentKey = Dept.DepartmentKey
@@ -84,7 +86,17 @@ BEGIN
 		@InputQuery		NVARCHAR(500),
 		@RScript		NVARCHAR(500);
 
-	SET @InputQuery = N'SELECT * FROM #Charges WHERE TotalCharges > 0 AND DATEPART(dw, CalendarDate) BETWEEN 2 AND 6;';
+	SET @InputQuery = N'
+	SELECT
+		CalendarDate,
+		TotalCharges
+	FROM
+		#Charges
+	WHERE
+		TotalCharges > 0
+		AND
+		DATEPART(dw, CalendarDate) BETWEEN 2 AND 6;';
+
 
 	SET @RScript = N'
 	df <- as.data.frame(c(
