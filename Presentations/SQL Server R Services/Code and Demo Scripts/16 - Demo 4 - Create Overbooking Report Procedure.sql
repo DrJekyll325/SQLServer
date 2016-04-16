@@ -50,6 +50,9 @@ BEGIN
 	SET @StatisticsStartDateKey = RDemo.dbo.ufnCalendarDateKey(@StatisticsStartDate);
 	SET @StatisticsEndDateKey = RDemo.dbo.ufnCalendarDateKey(@StatisticsEndDate);
 
+	
+	IF EXISTS(SELECT * FROM sys.tables WHERE name = 'tmpAppointments')
+		DROP TABLE RDemo.dbo.tmpAppointments;
 
 
 	WITH Summary
@@ -134,7 +137,7 @@ BEGIN
 		AppointmentsPerDay = ISNULL(Prov.AppointmentsPerDay, 0),
 		OverbookingSlotsAllowed = 0
 	INTO
-		#tmpAppointments
+		RDemo.dbo.tmpAppointments
 	FROM
 		Summary Summ
 			LEFT JOIN
@@ -164,7 +167,7 @@ BEGIN
 		AppointmentsPerDay,
 		OverbookingSlotsAllowed
 	FROM
-		#tmpAppointments;';
+		Rdemo.dbo.tmpAppointments;';
 
 
 	SET @RScript = N'
@@ -174,14 +177,36 @@ BEGIN
 	Results <- df;
 	';
 
-	EXEC sp_execute_external_script
-		@language			= N'R',
-		@script				= @RScript,
-		@input_data_1		= @InputQuery,
-		@input_data_1_name	= N'myQuery',
-		@output_data_1_name	= N'Results'
-	WITH RESULT SETS
-	((
+
+	SELECT
+		*
+	INTO
+		#tmpOverbooking
+	FROM
+		OPENROWSET('SQLNCLI', 'Server=(local);Trusted_Connection=yes;', N'
+			EXEC sp_execute_external_script
+				@language			= N''R'',
+				@script				= N''
+					df <- myQuery;
+					df$ExpectedAppointments <- qbinom(p = df$OverbookingThreshold, size = df$TotalAppointments, prob = df$ShowUpRate, lower.tail = TRUE);
+					df$OverbookingSlotsAllowed <- df$TotalAppointments - df$ExpectedAppointments;
+					Results <- df;'',
+				@input_data_1		= N''
+					SELECT
+						ProviderKey,
+						AppointmentDateKey,
+						TotalAppointments,
+						ShowUpRate,
+						ExpectedAppointments,
+						OverbookingThreshold,
+						AppointmentsPerDay,
+						OverbookingSlotsAllowed
+					FROM
+						Rdemo.dbo.tmpAppointments;'',
+				@input_data_1_name	= N''myQuery'',
+				@output_data_1_name	= N''Results''
+			WITH RESULT SETS
+			((
 		"ProviderKey"				INT NOT NULL,
 		"AppointmentDateKey"		INT NOT NULL,
 		"TotalAppointments"			INT NOT NULL,
@@ -190,10 +215,31 @@ BEGIN
 		"OverbookingThreshold"		NUMERIC(6, 4)  NOT NULL,
 		"AppointmentsPerDay"		INT NOT NULL,
 		"OverbookingSlotsAllowed"	INT NOT NULL
-	));
+			));');
 
 
-	DROP TABLE #tmpAppointments;
+	SELECT
+		Prov.ProviderName,
+		Prov.ProviderSpecialty,
+		AppointmentDate = Cal.CalendarDate,
+		Ovr.TotalAppointments,
+		Ovr.ShowUpRate,
+		Ovr.ExpectedAppointments,
+		Ovr.OverbookingThreshold,
+		Ovr.AppointmentsPerDay,
+		Ovr.OverbookingSlotsAllowed,
+		TotalFreeSlots = Ovr.AppointmentsPerDay - Ovr.TotalAppointments + Ovr.OverbookingSlotsAllowed
+	FROM
+		#tmpOverbooking Ovr
+			INNER JOIN
+		RDemo.dim.Provider Prov
+			ON Ovr.ProviderKey = Prov.ProviderKey
+			INNER JOIN
+		RDemo.dim.Calendar Cal
+			ON Ovr.AppointmentDateKey = Cal.CalendarKey;
+
+	DROP TABLE RDemo.dbo.tmpAppointments;
+	DROP TABLE #tmpOverbooking;
 
 END;
 
