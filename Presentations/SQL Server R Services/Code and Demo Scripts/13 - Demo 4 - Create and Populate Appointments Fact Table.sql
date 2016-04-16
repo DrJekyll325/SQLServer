@@ -3,6 +3,10 @@ GO
 
 
 --	Create and populate Appointment fact
+IF EXISTS(SELECT * FROM sys.tables WHERE name = 'Appointment')
+	DROP TABLE fact.Appointment;
+
+
 CREATE TABLE
 	fact.Appointment
 (

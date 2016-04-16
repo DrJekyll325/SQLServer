@@ -2,7 +2,7 @@ USE RDemo;
 GO
 
 
---	Create and populate Calendar dimension
+--	Create Calendar dimension
 IF EXISTS(SELECT * FROM sys.tables WHERE name = 'Calendar')
 	DROP TABLE dim.Calendar;
 
@@ -378,7 +378,8 @@ CREATE TABLE
 	ProviderName				VARCHAR(20) NOT NULL,
 	ProviderNumber				INT NOT NULL,
 	ProviderType				VARCHAR(5) NOT NULL,
-	ProviderSpecialty			VARCHAR(20) NOT NULL,
+	ProviderSpecialty			VARCHAR(20) NOT NULL,	
+	AppointmentsPerDay			INT NOT NULL,
 	ProviderActiveFlag			CHAR(1) NOT NULL,
 	ProviderSourceSystem		VARCHAR(10) NOT NULL,
 	ProviderSourceKey			INT NOT NULL,
@@ -392,27 +393,27 @@ ALTER TABLE dim.Provider ADD CONSTRAINT PK_Provider PRIMARY KEY (ProviderKey);
 SET IDENTITY_INSERT dim.Provider ON;
 
 INSERT INTO dim.Provider
-(ProviderKey, ProviderName, ProviderNumber, ProviderType, ProviderSpecialty, ProviderActiveFlag, ProviderSourceSystem, ProviderSourceKey, ProviderLastUpdatedDate)
-VALUES (-1, 'Unknown', 0, 'N/A', 'Unknown', 'Y', 'N/A', 1, CAST(SYSDATETIME() AS DATE));
+(ProviderKey, ProviderName, ProviderNumber, ProviderType, ProviderSpecialty, AppointmentsPerDay, ProviderActiveFlag, ProviderSourceSystem, ProviderSourceKey, ProviderLastUpdatedDate)
+VALUES (-1, 'Unknown', 0, 'N/A', 'Unknown', 0, 'Y', 'N/A', 1, CAST(SYSDATETIME() AS DATE));
 
 SET IDENTITY_INSERT dim.Provider OFF;
 
 INSERT INTO dim.Provider
-(ProviderName, ProviderNumber, ProviderType, ProviderSpecialty, ProviderActiveFlag, ProviderSourceSystem, ProviderSourceKey, ProviderLastUpdatedDate)
-VALUES ('Benton, Peter', 123, 'MD', 'Emergency Medicine', 'Y', 'EMR', 1, CAST(SYSDATETIME() AS DATE));
+(ProviderName, ProviderNumber, ProviderType, ProviderSpecialty, AppointmentsPerDay, ProviderActiveFlag, ProviderSourceSystem, ProviderSourceKey, ProviderLastUpdatedDate)
+VALUES ('Benton, Peter', 123, 'MD', 'Emergency Medicine', 0, 'Y', 'EMR', 1, CAST(SYSDATETIME() AS DATE));
 
 INSERT INTO dim.Provider
-(ProviderName, ProviderNumber, ProviderType, ProviderSpecialty, ProviderActiveFlag, ProviderSourceSystem, ProviderSourceKey, ProviderLastUpdatedDate)
-VALUES ('Grey, Meredith', 234, 'MD', 'Surgery', 'Y', 'EMR', 2, CAST(SYSDATETIME() AS DATE));
+(ProviderName, ProviderNumber, ProviderType, ProviderSpecialty, AppointmentsPerDay, ProviderActiveFlag, ProviderSourceSystem, ProviderSourceKey, ProviderLastUpdatedDate)
+VALUES ('Grey, Meredith', 234, 'MD', 'Surgery', 8, 'Y', 'EMR', 2, CAST(SYSDATETIME() AS DATE));
 
 INSERT INTO dim.Provider
-(ProviderName, ProviderNumber, ProviderType, ProviderSpecialty, ProviderActiveFlag, ProviderSourceSystem, ProviderSourceKey, ProviderLastUpdatedDate)
-VALUES ('McCoy, Leonard', 345, 'MD', 'Cardiology', 'Y', 'EMR', 3, CAST(SYSDATETIME() AS DATE));
+(ProviderName, ProviderNumber, ProviderType, ProviderSpecialty, AppointmentsPerDay, ProviderActiveFlag, ProviderSourceSystem, ProviderSourceKey, ProviderLastUpdatedDate)
+VALUES ('McCoy, Leonard', 345, 'MD', 'Cardiology', 16, 'Y', 'EMR', 3, CAST(SYSDATETIME() AS DATE));
 
 INSERT INTO dim.Provider
-(ProviderName, ProviderNumber, ProviderType, ProviderSpecialty, ProviderActiveFlag, ProviderSourceSystem, ProviderSourceKey, ProviderLastUpdatedDate)
-VALUES ('Quinn, Michaela', 456, 'MD', 'Family Medicine', 'Y', 'EMR', 4, CAST(SYSDATETIME() AS DATE));
+(ProviderName, ProviderNumber, ProviderType, ProviderSpecialty, AppointmentsPerDay, ProviderActiveFlag, ProviderSourceSystem, ProviderSourceKey, ProviderLastUpdatedDate)
+VALUES ('Quinn, Michaela', 456, 'MD', 'Family Medicine', 32, 'Y', 'EMR', 4, CAST(SYSDATETIME() AS DATE));
 
 INSERT INTO dim.Provider
-(ProviderName, ProviderNumber, ProviderType, ProviderSpecialty, ProviderActiveFlag, ProviderSourceSystem, ProviderSourceKey, ProviderLastUpdatedDate)
-VALUES ('Torres, Callie', 567, 'MD', 'Orthopedics', 'Y', 'EMR', 5, CAST(SYSDATETIME() AS DATE));
+(ProviderName, ProviderNumber, ProviderType, ProviderSpecialty, AppointmentsPerDay, ProviderActiveFlag, ProviderSourceSystem, ProviderSourceKey, ProviderLastUpdatedDate)
+VALUES ('Torres, Callie', 567, 'MD', 'Orthopedics', 16, 'Y', 'EMR', 5, CAST(SYSDATETIME() AS DATE));

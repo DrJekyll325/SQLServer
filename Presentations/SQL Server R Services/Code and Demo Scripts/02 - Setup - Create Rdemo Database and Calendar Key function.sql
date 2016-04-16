@@ -31,14 +31,17 @@ GO
 
 
 CREATE SCHEMA dim;
+GO
 CREATE SCHEMA fact;
+GO
 CREATE SCHEMA report;
+GO
 
 
 --	Create calendar date key function
 IF EXISTS(SELECT * FROM sys.objects WHERE name = 'ufnCalendarDateKey')
 	DROP FUNCTION dbo.ufnCalendarDateKey;
-
+GO
 
 CREATE FUNCTION dbo.ufnCalendarDateKey
 (

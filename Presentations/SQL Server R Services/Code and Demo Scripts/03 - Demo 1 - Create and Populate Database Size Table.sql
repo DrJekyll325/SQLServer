@@ -185,5 +185,5 @@ SELECT
 FROM
 	dbo.tblDatabaseSize
 ORDER BY
-	MeasuredDate,
+	MeasuredDate DESC,
 	DatabaseName;
