@@ -6485,10 +6485,9 @@ CREATE MEASURE 'Charges'[Total Units]=SUM([Units]);
               <Value>SqlServer</Value>
             </Annotation>
           </Annotations>
-          <ConnectionString>Provider=SQLNCLI11;Data Source=MyHospital;Integrated Security=SSPI;Persist Security Info=true;Initial Catalog=MyHospital</ConnectionString>
+          <ConnectionString>Provider=SQLNCLI11;Data Source=MyHospital;Integrated Security=SSPI;Persist Security Info=false;Initial Catalog=MyHospital</ConnectionString>
           <ImpersonationInfo>
-            <ImpersonationMode>ImpersonateAccount</ImpersonationMode>
-            <Account>sql_ssas_tabular</Account>
+            <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
           </ImpersonationInfo>
           <Timeout>PT0S</Timeout>
         </DataSource>

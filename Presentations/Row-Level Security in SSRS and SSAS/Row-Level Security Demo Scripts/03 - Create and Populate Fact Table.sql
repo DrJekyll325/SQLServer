@@ -67,7 +67,7 @@ INSERT INTO
 	ChargesLastUpdatedDate
 )
 SELECT
-	ChargePostingDateKey = dbo.ufnCalendarDateKey(CAST(DATEADD(dd, ABS(CHECKSUM(NEWID()) % 1826), '2011-01-01') AS DATE)),
+	ChargePostingDateKey = dbo.ufnCalendarDateKey(CAST(DATEADD(dd, ABS(CHECKSUM(NEWID()) % 1826), '2011-04-01') AS DATE)),
 	DepartmentKey = -1,
 	PatientKey = ABS(CHECKSUM(NEWID()) % 10000) + 1,
 	ProcedureCodeKey = -1,

@@ -5,7 +5,7 @@ GO
 CREATE DATABASE MyHospital ON PRIMARY
 (
 	NAME = N'MyHospital',
-	FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\MyHospital.mdf',
+	FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\MyHospital.mdf',
 	SIZE = 204800KB,
 	MAXSIZE = UNLIMITED,
 	FILEGROWTH = 25600KB
@@ -13,7 +13,7 @@ CREATE DATABASE MyHospital ON PRIMARY
 LOG ON
 (
 	NAME = N'MyHospital_log',
-	FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA\MyHospital_log.ldf',
+	FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\MyHospital_log.ldf',
 	SIZE = 204800KB,
 	MAXSIZE = UNLIMITED,
 	FILEGROWTH = 204800KB

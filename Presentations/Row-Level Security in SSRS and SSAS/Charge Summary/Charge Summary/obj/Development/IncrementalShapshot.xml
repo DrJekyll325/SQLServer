@@ -19,77 +19,77 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>QFHelYaEvmnS4FZZdTNBxFB9N9o=1/15/2016 9:47:01 PM4/14/2015 1:07:50 PM</TimeStamp>
+        <TimeStamp>QFHelYaEvmnS4FZZdTNBxFB9N9o=1/15/2016 8:47:01 PM4/14/2015 12:07:50 PM</TimeStamp>
         <ID>
           <String>dsMyHospital</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>6BIXJMLg4bUgPkpS/UGERal6F+g=4/10/2015 1:10:36 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <TimeStamp>6BIXJMLg4bUgPkpS/UGERal6F+g=4/10/2015 12:10:36 AM4/14/2015 12:07:50 PM</TimeStamp>
         <ID>
           <String>dsvMyHospital</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Sna2tbRWTzeDxz8KkM504Htyqa4=4/10/2015 1:22:22 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <TimeStamp>ebYuYSTIjJDrd5YvyJmABJUZyjE=5/3/2016 10:15:09 AM4/14/2015 12:07:50 PM</TimeStamp>
         <ID>
           <String>Charge Posting Date</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>7GBtIq67qQay2rm0xFA3sglulag=4/10/2015 1:28:04 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <TimeStamp>7GBtIq67qQay2rm0xFA3sglulag=4/10/2015 12:28:04 AM4/14/2015 12:07:50 PM</TimeStamp>
         <ID>
           <String>Department</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>obj94Elm6me4UOwICgDpE89/Nxs=4/10/2015 1:20:22 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <TimeStamp>obj94Elm6me4UOwICgDpE89/Nxs=4/10/2015 12:20:22 AM4/14/2015 12:07:50 PM</TimeStamp>
         <ID>
           <String>Patient</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>7cbDzZeRC9n7nlwRHbWRywoZFlM=4/10/2015 1:21:30 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <TimeStamp>7cbDzZeRC9n7nlwRHbWRywoZFlM=4/10/2015 12:21:30 AM4/14/2015 12:07:50 PM</TimeStamp>
         <ID>
           <String>Procedure Code</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>sam3s20ft7/PyxyrEmZR6NPybf0=4/10/2015 1:20:49 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <TimeStamp>sam3s20ft7/PyxyrEmZR6NPybf0=4/10/2015 12:20:49 AM4/14/2015 12:07:50 PM</TimeStamp>
         <ID>
           <String>Provider</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>9dWbK5X0OOdN7ODpGMgAgN7PsZY=4/10/2015 1:23:06 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <TimeStamp>9dWbK5X0OOdN7ODpGMgAgN7PsZY=4/10/2015 12:23:06 AM4/14/2015 12:07:50 PM</TimeStamp>
         <ID>
           <String>Service Date</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>wCI8aKGeryYBeBMxW3KG5PzjgGs=4/10/2015 8:03:47 AM4/14/2015 1:07:50 PMR0COmL+lte+RCXOBQd1S9hodhik=4/10/2015 1:23:56 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <TimeStamp>wCI8aKGeryYBeBMxW3KG5PzjgGs=4/10/2015 7:03:47 AM4/14/2015 12:07:50 PMR0COmL+lte+RCXOBQd1S9hodhik=4/10/2015 12:23:56 AM4/14/2015 12:07:50 PM</TimeStamp>
         <ID>
           <String>Charge Summary</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Role</Type>
-        <TimeStamp>tHlzTXzI3LB6rzreQHMOTjRCUjE=4/10/2015 8:53:14 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <TimeStamp>tHlzTXzI3LB6rzreQHMOTjRCUjE=4/10/2015 7:53:14 AM4/14/2015 12:07:50 PM</TimeStamp>
         <ID>
           <String>Role</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Role</Type>
-        <TimeStamp>L2XI7xMjqpgMagdsfAsgL/yYvUE=4/10/2015 8:54:16 AM4/14/2015 1:07:50 PM</TimeStamp>
+        <TimeStamp>L2XI7xMjqpgMagdsfAsgL/yYvUE=4/10/2015 7:54:16 AM4/14/2015 12:07:50 PM</TimeStamp>
         <ID>
           <String>Role 1</String>
         </ID>
@@ -97,7 +97,7 @@
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>L6da0q2w5KlZXtiqmb6jzzWCbs0=4/10/2015 8:54:16 AM4/14/2015 1:07:50 PM</TimeStamp>
+      <TimeStamp>L6da0q2w5KlZXtiqmb6jzzWCbs0=4/10/2015 7:54:16 AM4/14/2015 12:07:50 PM</TimeStamp>
       <ID>
         <String>Charge Summary</String>
       </ID>
@@ -106,5 +106,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2016-01-16T03:47:28.366667Z</LastDeployed>
+  <LastDeployed>2016-05-03T16:15:23.673333Z</LastDeployed>
 </DeploymentSnapshot>

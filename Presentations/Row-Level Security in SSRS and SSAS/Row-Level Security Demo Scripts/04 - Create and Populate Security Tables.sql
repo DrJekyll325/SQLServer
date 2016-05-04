@@ -126,6 +126,8 @@ WHERE
 	AND
 	Dept.Department = 'Cardiology';
 
+GO
+
 
 CREATE VIEW vwUserDepartmentActive AS
 SELECT
@@ -135,6 +137,8 @@ FROM
 	MyHospital.sec.UserDepartment Dept
 WHERE
 	CAST(SYSDATETIME() AS DATE) BETWEEN Dept.StartEffectiveDate AND Dept.EndEffectiveDate;
+
+GO
 
 
 CREATE VIEW vwTabularPermissions AS
