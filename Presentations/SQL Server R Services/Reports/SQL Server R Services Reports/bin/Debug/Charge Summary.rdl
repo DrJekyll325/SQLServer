@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition">
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="dsRDemo">
@@ -119,7 +119,7 @@
               <ChartMembers>
                 <ChartMember>
                   <Group Name="ChartGroup" />
-                  <Label />
+                  <Label>=Fields!ChargePostingDate.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -136,6 +136,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
+                        <X>=Fields!ChargePostingDate.Value</X>
                         <Y>=Sum(Fields!TotalCharges.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
@@ -173,7 +174,6 @@
                   <ChartAxis Name="Primary">
                     <Style>
                       <FontSize>8pt</FontSize>
-                      <Format>MM/dd/yy</Format>
                     </Style>
                     <ChartAxisTitle>
                       <Caption>Charge Posting Date</Caption>
@@ -181,6 +181,8 @@
                         <FontSize>8pt</FontSize>
                       </Style>
                     </ChartAxisTitle>
+                    <Interval>7</Interval>
+                    <IntervalType>Days</IntervalType>
                     <ChartMajorGridLines>
                       <Enabled>False</Enabled>
                       <Style>
@@ -203,6 +205,7 @@
                     <CrossAt>NaN</CrossAt>
                     <Minimum>NaN</Minimum>
                     <Maximum>NaN</Maximum>
+                    <IncludeZero>false</IncludeZero>
                     <ChartAxisScaleBreak>
                       <Style />
                     </ChartAxisScaleBreak>

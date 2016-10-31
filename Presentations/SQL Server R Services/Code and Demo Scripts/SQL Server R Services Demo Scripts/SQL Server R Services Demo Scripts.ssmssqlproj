@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SQL Server R Services Demo Scripts">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="MYHOSPITAL:MYHOSPITAL\DrJekyll325">
+          <Created>2016-10-22T09:57:45.2838898-06:00</Created>
+          <Type>SQL</Type>
+          <Server>MYHOSPITAL</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="01 - Setup - Create Admin Database and Tally Table.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MYHOSPITAL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MYHOSPITAL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>01 - Setup - Create Admin Database and Tally Table.sql</FullPath>
+        </FileNode>
+        <FileNode Name="02 - Setup - Create Rdemo Database and Calendar Key function.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MYHOSPITAL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MYHOSPITAL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>02 - Setup - Create Rdemo Database and Calendar Key function.sql</FullPath>
+        </FileNode>
+        <FileNode Name="03 - Demo 1 - Create and Populate Database Size Table.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MYHOSPITAL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MYHOSPITAL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>03 - Demo 1 - Create and Populate Database Size Table.sql</FullPath>
+        </FileNode>
+        <FileNode Name="05 - Demo 2 - Getting Data Into and Out Of R.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MYHOSPITAL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MYHOSPITAL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>05 - Demo 2 - Getting Data Into and Out Of R.sql</FullPath>
+        </FileNode>
+        <FileNode Name="06 - Demo 3 - Create and Populate Dimension Tables.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MYHOSPITAL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MYHOSPITAL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>06 - Demo 3 - Create and Populate Dimension Tables.sql</FullPath>
+        </FileNode>
+        <FileNode Name="07 - Demo 3 - Create and Populate Charges Fact Table.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MYHOSPITAL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MYHOSPITAL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>07 - Demo 3 - Create and Populate Charges Fact Table.sql</FullPath>
+        </FileNode>
+        <FileNode Name="09 - Demo 3 - Create Report Parameter Procedures.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MYHOSPITAL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MYHOSPITAL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>09 - Demo 3 - Create Report Parameter Procedures.sql</FullPath>
+        </FileNode>
+        <FileNode Name="10 - Demo 3 - Create Charge Summary Report Procedure.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MYHOSPITAL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MYHOSPITAL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>10 - Demo 3 - Create Charge Summary Report Procedure.sql</FullPath>
+        </FileNode>
+        <FileNode Name="11 - Demo 3 - Create Charge Summary Statistics Report Procedure.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MYHOSPITAL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MYHOSPITAL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>11 - Demo 3 - Create Charge Summary Statistics Report Procedure.sql</FullPath>
+        </FileNode>
+        <FileNode Name="12 - Demo 3 - Execute Stored Procedure Queries.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MYHOSPITAL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MYHOSPITAL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>12 - Demo 3 - Execute Stored Procedure Queries.sql</FullPath>
+        </FileNode>
+        <FileNode Name="13 - Demo 4 - Create and Populate Appointments Fact Table.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MYHOSPITAL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MYHOSPITAL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>13 - Demo 4 - Create and Populate Appointments Fact Table.sql</FullPath>
+        </FileNode>
+        <FileNode Name="14 - Demo 4 - Create No Show Report Procedure.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MYHOSPITAL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MYHOSPITAL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>14 - Demo 4 - Create No Show Report Procedure.sql</FullPath>
+        </FileNode>
+        <FileNode Name="16 - Demo 4 - Create Overbooking Report Procedure.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MYHOSPITAL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MYHOSPITAL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>16 - Demo 4 - Create Overbooking Report Procedure.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

@@ -17,6 +17,14 @@
       <Name>Charge Summary.rdl</Name>
       <FullPath>Charge Summary.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>No Show Report.rdl</Name>
+      <FullPath>No Show Report.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Overbooking Report.rdl</Name>
+      <FullPath>Overbooking Report.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>

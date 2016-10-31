@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition">
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="dsRDemo">
@@ -155,7 +155,7 @@
               <ChartMembers>
                 <ChartMember>
                   <Group Name="ChartGroup" />
-                  <Label />
+                  <Label>=Fields!ChargePostingDate.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -350,6 +350,8 @@
                         <FontSize>8pt</FontSize>
                       </Style>
                     </ChartAxisTitle>
+                    <Interval>7</Interval>
+                    <IntervalType>Days</IntervalType>
                     <ChartMajorGridLines>
                       <Enabled>False</Enabled>
                       <Style>
@@ -837,6 +839,11 @@
   <ReportParameters>
     <ReportParameter Name="PracticeName">
       <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>&lt;All Practices&gt;</Value>
+        </Values>
+      </DefaultValue>
       <Prompt>Practice: </Prompt>
       <ValidValues>
         <DataSetReference>
