@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Python in SQL Server 2017 Reports", "Python in SQL Server 2017 Reports\Python in SQL Server 2017 Reports.rptproj", "{DFE58424-D050-4D35-B68B-0B9BCB598AF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFE58424-D050-4D35-B68B-0B9BCB598AF2}.Debug|Default.ActiveCfg = Debug
+		{DFE58424-D050-4D35-B68B-0B9BCB598AF2}.Debug|Default.Build.0 = Debug
+		{DFE58424-D050-4D35-B68B-0B9BCB598AF2}.Debug|Default.Deploy.0 = Debug
+		{DFE58424-D050-4D35-B68B-0B9BCB598AF2}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{DFE58424-D050-4D35-B68B-0B9BCB598AF2}.DebugLocal|Default.Build.0 = DebugLocal
+		{DFE58424-D050-4D35-B68B-0B9BCB598AF2}.Release|Default.ActiveCfg = Release
+		{DFE58424-D050-4D35-B68B-0B9BCB598AF2}.Release|Default.Build.0 = Release
+		{DFE58424-D050-4D35-B68B-0B9BCB598AF2}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
