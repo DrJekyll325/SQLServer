@@ -14,7 +14,7 @@ GO
 ------------------------------------------------------------------------------------------------------
 EXEC sp_execute_external_script
 	@language		= N'Python',
-	@script			= N'print("Welcome to SQL Saturday Atlanta 2017!")';
+	@script			= N'print("Welcome to SQL Saturday Oregon 2017!")';
 ------------------------------------------------------------------------------------------------------
 
 

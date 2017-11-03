@@ -64,9 +64,9 @@ IF DATEPART(WEEKDAY, @LastBusinessDay) = 7
 IF DATEPART(WEEKDAY, @LastBusinessDay) = 1
 	SET @LastBusinessDay = DATEADD(dd, -2, @LastBusinessDay);
 
-SET @LastBusinessDayKey = RDemo.dbo.ufnCalendarDateKey(@LastBusinessDay);
+SET @LastBusinessDayKey = PyDemo.dbo.ufnCalendarDateKey(@LastBusinessDay);
 SET @180DaysAgo = DATEADD(dd, -179, @LastBusinessDay);
-SET @180DaysAgoKey = RDemo.dbo.ufnCalendarDateKey(@180DaysAgo);
+SET @180DaysAgoKey = PyDemo.dbo.ufnCalendarDateKey(@180DaysAgo);
 
 
 CREATE TABLE
@@ -120,7 +120,7 @@ AS
 		Cal.CalendarKey,
 		Cal.DayOfWeekNum
 	FROM
-		RDemo.dim.Calendar Cal
+		PyDemo.dim.Calendar Cal
 	WHERE
 		Cal.CalendarKey BETWEEN @180DaysAgoKey AND @LastBusinessDayKey
 )

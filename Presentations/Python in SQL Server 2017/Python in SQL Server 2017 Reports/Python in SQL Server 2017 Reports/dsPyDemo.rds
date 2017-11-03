@@ -2,7 +2,7 @@
 <RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="dsPyDemo">
   <ConnectionProperties>
     <Extension>SQL</Extension>
-    <ConnectString>Data Source=MYHOSPITAL;Initial Catalog=PyDemo</ConnectString>
+    <ConnectString>Data Source=SQL2017;Initial Catalog=PyDemo</ConnectString>
     <IntegratedSecurity>true</IntegratedSecurity>
   </ConnectionProperties>
   <DataSourceID>cde6ced1-47a7-4e6f-8614-73de58e4908b</DataSourceID>
