@@ -8,7 +8,7 @@ BEGIN
 	CREATE DATABASE Admin ON PRIMARY
 	(
 		NAME = N'Admin',
-		FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\Admin.mdf',
+		FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\Admin.mdf',
 		SIZE = 20480KB,
 		MAXSIZE = UNLIMITED,
 		FILEGROWTH = 2560KB
@@ -16,7 +16,7 @@ BEGIN
 	LOG ON
 	(
 		NAME = N'Admin_log',
-		FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA\Admin_log.ldf',
+		FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\Admin_log.ldf',
 		SIZE = 20480KB,
 		MAXSIZE = UNLIMITED,
 		FILEGROWTH = 20480KB

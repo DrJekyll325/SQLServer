@@ -33,7 +33,7 @@
       <Options>
         <OutputPath>bin\Debug</OutputPath>
         <TargetServerVersion>SSRS2016</TargetServerVersion>
-        <TargetServerURL>http://myhospital/reportserver</TargetServerURL>
+        <TargetServerURL>http://sql2017/reportserver</TargetServerURL>
         <TargetFolder>SQL Server R Services Reports</TargetFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>
