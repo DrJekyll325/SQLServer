@@ -3,7 +3,6 @@
   <ConnectionProperties>
     <Extension>SQL</Extension>
     <ConnectString>Data Source=SQL2017;Initial Catalog=RDemo</ConnectString>
-    <IntegratedSecurity>true</IntegratedSecurity>
   </ConnectionProperties>
   <DataSourceID>cde6ced1-47a7-4e6f-8614-73de58e4908b</DataSourceID>
 </RptDataSource>
