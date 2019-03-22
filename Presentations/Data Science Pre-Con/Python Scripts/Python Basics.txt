@@ -1,0 +1,52 @@
+import os
+
+os.system('cls')
+
+print('Hello, world!')
+
+
+#	Run each comparison separately
+print(2 > 1)
+print(10 < 3)
+print(4 != 6)
+print(25 == 25)
+
+
+#	Set all values together
+cities = ['Chicago', 'Colorado', 'Dallas', 'Minnesota', 'Nashville', 'St. Louis', 'Winnipeg']
+teams = ['Blackhawks', 'Avalanche', 'Stars', 'Wild', 'Predators', 'Blues', 'Jets']
+wins = [32, 33, 38, 34, 42, 39, 44]
+losses = [31, 29, 30, 31, 27, 27, 26]
+ot_losses = [10, 12, 6, 9, 6, 8, 4]
+
+
+#	Run each print separately
+print(cities)
+print(cities[0] + ' ' + teams[0])
+print(wins[1:3])
+print(losses[-1])
+print(teams[3:])
+print(teams[:3])
+
+
+#	Run as spaced
+print(teams)
+
+team_names = teams
+team_names[3] = 'North Stars'
+
+print(team_names)
+
+print(teams)
+
+
+#	Run as spaced
+teams[3] = 'North Stars'
+print(teams)
+
+team_names = list(teams)
+team_names[3] = 'North Stars'
+
+print(team_names)
+
+print(teams)

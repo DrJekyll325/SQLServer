@@ -1,0 +1,42 @@
+boolean - True / False  case is important
+lists are zero-indexed
+
+slices [inclusive: exclusive]
+
+Files Needed
+SQL install
+SSMS install
+Anaconda install
+PyCharm install
+Test file
+Data files
+
+
+
+08:30 - 08:40	Introductions
+08:40 - 09:45	Python / SQL Integration
+09:45 - 10:00	Break
+10:00 - 10:15	Testing environments
+10:15 - 10:35	Python basics
+10:35 - 11:10	Numpy
+11:10 - 11:30	pandas
+11:30 - 12:15	Lunch
+12:15 - 13:00	matplotlib
+13:00 - 13:30	Exploring Data
+13:30 - 13:45	Break
+13:45 - ???		Movie data
+
+
+
+Exploring Data
+Predicting Disk Space
+Operationalizing
+Regular Python stuff
+Visualization
+
+
+Datasets
+Dinosaurus
+Titanic
+Generated disk Space
+

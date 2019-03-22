@@ -1,0 +1,48 @@
+import numpy as np
+import os
+import pandas as pd
+
+os.system('cls')
+
+datasaurus = pd.read_table('C:\Data Science Pre-Con\The Datasaurus Dozen\DatasaurusDozen.tsv')
+print(datasaurus.head())
+
+#	Run as spaced
+ds = datasaurus.head()
+print(ds.x)
+
+print(ds['x'])
+
+print(ds[['x']])
+
+print(ds[['x', 'y']])
+
+
+#	Run each print separately
+print(datasaurus[138:146])
+print(datasaurus.loc[138:146])
+print(datasaurus.iloc[138:146])
+
+
+#	Run each print separately
+print(datasaurus.loc[138, 'x'])
+print(datasaurus.loc[138:146, 'x'])
+print(datasaurus.loc[138:146, ['x', 'y']])
+print(datasaurus.iloc[138:146, [1, 2]])
+
+
+#	Run as spaced
+standings = pd.DataFrame()
+standings['City'] = ['Chicago', 'Colorado', 'Dallas', 'Minnesota', 'Nashville', 'St. Louis', 'Winnipeg']
+standings['Team'] = ['Blackhawks', 'Avalanche', 'Stars', 'Wild', 'Predators', 'Blues', 'Jets']
+standings['Wins'] = [32, 33, 38, 34, 42, 39, 44]
+standings['Losses'] = [31, 29, 30, 31, 27, 27, 26]
+standings['OvertimeLosses'] = [10, 12, 6, 9, 6, 8, 4]
+print(standings)
+
+losses = standings['Losses']
+print(standings[losses >= 30])
+
+#   print(standings[losses >= 29 and losses < 31])
+mediocre_teams = np.logical_and(losses >= 29, losses < 31)
+print(standings[mediocre_teams])
